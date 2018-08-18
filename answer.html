@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>q141837</title>
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var textArea = document.getElementById('inquiryTextArea');
+            textArea.addEventListener('input', function(e) {
+                e.target.value = '';
+            });
+        });
+  </script>
+</head>
+<body>
+  <form>
+    <input name="userName" />
+    <br />
+    <textarea id="inquiryTextArea"
+              name="inquiryText"
+              cols="40"
+              rows="5"
+              placeholder="ここには入力できません。"></textarea>
+  </form>
+</body>
+</html>
